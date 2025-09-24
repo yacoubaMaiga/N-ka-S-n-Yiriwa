@@ -31,7 +31,25 @@ body {
     padding: 0 15px;
 }
 
+section {
+    scroll-margin-top: 80px; /* hauteur de ton header */
+}
+
 /* En-tête */
+
+
+#d img {
+    width: 30px;
+}
+
+#d {
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: auto;
+}
+
 header {
     background-color: transparent;
     color: var(--white);
@@ -47,7 +65,6 @@ header {
 header.scrolled {
     background-color: var(--primary-green);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
 }
 
 .header-content {
@@ -128,30 +145,28 @@ nav ul li a:hover::after {
 }
 
 .cta-btn {
-    display: inline-flex;             /* permet d'aligner logo + texte */
-    align-items: center;              /* centre verticalement */
-    gap: 0.6rem;                      /* espace entre logo et texte */
-    background-color: var(--primary-green);
+    display: inline-block;
+    background-color: var(--primary-green); /* ton vert principal */
     color: var(--white);
     font-size: 1.2rem;
     font-weight: 600;
     padding: 1rem 2rem;
-    border-radius: 50px;
+    border-radius: 50px; /* bouton arrondi et moderne */
     text-decoration: none;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
 }
 
 .cta-btn:hover {
-    transform: translateY(-3px);      /* petit effet de survol */
+    background-color: var(--dark-green); /* variante plus foncée au survol */
+    transform: translateY(-3px); /* léger effet de "remontée" */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
-.cta-icon {
-    width: 24px;
-    height: 24px;
+.cta-btn:active {
+    transform: translateY(-1px); /* clic plus naturel */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 
 /* Sections */
